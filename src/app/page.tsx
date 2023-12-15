@@ -17,11 +17,11 @@ export default function Home() {
           >
             By{' '}
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
+              src="/codetensai-logo.png"
+              alt="By Code Tensai Logo"
+              // className={styles.vercelLogo}
               width={100}
-              height={24}
+              height={50}
               priority
             />
           </a>
@@ -30,11 +30,11 @@ export default function Home() {
 
       <div className={styles.center}>
         <Image
-          className={styles.logo}
+          // className={styles.logo}
           src="/codetensai-logo.png"
           alt="Code Tensai Logo"
           width={200}
-          height={80}
+          height={100}
           priority
         />
       </div>
