@@ -38,40 +38,40 @@ export default function Home() {
         </a>
 
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="/currentprojects"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
-            Learn <span>-&gt;</span>
+            Current Projects <span>-&gt;</span>
           </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+          <p>Check out current projects being worked on</p>
         </a>
 
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="/examples"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
-            Templates <span>-&gt;</span>
+            Examples <span>-&gt;</span>
           </h2>
-          <p>Explore starter templates for Next.js.</p>
+          <p>Some examples of how your website can look!</p>
         </a>
 
         <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="/contact"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
-            Deploy <span>-&gt;</span>
+            Contact <span>-&gt;</span>
           </h2>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Contact now for a quote or more information.
           </p>
         </a>
       </div>
