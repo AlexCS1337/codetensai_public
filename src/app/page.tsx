@@ -7,7 +7,7 @@ export default function Home() {
         <div className={styles.center}>
           <Image
             // className={styles.logo}
-            src="/codetensai-logo.png"
+            src="/img/codetensai-logo.png"
             alt="Code Tensai Logo"
             width={200}
             height={100}
@@ -78,7 +78,7 @@ export default function Home() {
           >
             2023 ©{" "}
             <Image
-              src="/codetensai-logo.png"
+              src="/img/codetensai-logo.png"
               alt="By Code Tensai Logo"
               // className={styles.vercelLogo}
               width={100}

@@ -4,6 +4,20 @@ import styles from "../page.module.css";
 export default function Contact() {
   return (
     <main className={styles.main}>
+      <div className={styles.center}>
+          <Image
+            // className={styles.logo}
+            src="/img/codetensai-logo.png"
+            alt="Code Tensai Logo"
+            width={200}
+            height={100}
+            priority
+          />
+        </div>
+        <div>
+        <p>コード天才</p>
+      </div>
+
       <div>
         <p>Text goes here</p>
       </div>
@@ -65,7 +79,7 @@ export default function Contact() {
           >
             2023 ©{" "}
             <Image
-              src="/codetensai-logo.png"
+              src="/img/codetensai-logo.png"
               alt="Code Tensai Logo"
               // className={styles.codetensaiLogo}
               width={100}
