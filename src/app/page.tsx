@@ -26,8 +26,6 @@ export default function Home() {
         <a
           href="/about"
           className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2>
             About <span>-&gt;</span>
@@ -40,8 +38,6 @@ export default function Home() {
         <a
           href="/currentprojects"
           className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2>
             Current Projects <span>-&gt;</span>
@@ -52,8 +48,6 @@ export default function Home() {
         <a
           href="/examples"
           className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2>
             Examples <span>-&gt;</span>
@@ -64,8 +58,6 @@ export default function Home() {
         <a
           href="/contact"
           className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2>
             Contact <span>-&gt;</span>

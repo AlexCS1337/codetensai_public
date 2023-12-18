@@ -4,7 +4,7 @@ import styles from "../page.module.css";
 export default function Contact() {
   return (
     <main className={styles.main}>
-      <div className={styles.info_about}>
+      <div>
         <p>Text goes here</p>
       </div>
 
@@ -12,8 +12,6 @@ export default function Contact() {
         <a
           href="/about"
           className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2>
             About <span>-&gt;</span>
@@ -26,8 +24,6 @@ export default function Contact() {
         <a
           href="/currentprojects"
           className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2>
             Current Projects <span>-&gt;</span>
@@ -38,8 +34,6 @@ export default function Contact() {
         <a
           href="/examples"
           className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2>
             Examples <span>-&gt;</span>
@@ -50,8 +44,6 @@ export default function Contact() {
         <a
           href="/contact"
           className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2>
             Contact <span>-&gt;</span>
