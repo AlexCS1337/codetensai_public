@@ -27,6 +27,7 @@ export default function Home() {
         >
           コード天才
         </p>
+        {/* todo: fix this link */}
         <div
           css={{
             fontSize: "16px",
@@ -63,7 +64,7 @@ export default function Home() {
           </p>
         </a>
 
-        <a href="/currentprojects" className={styles.card}>
+        <a href="/projects" className={styles.card}>
           <h2>
             Current Projects <span>-&gt;</span>
           </h2>
@@ -89,7 +90,7 @@ export default function Home() {
         <p>This website is a work in progress</p>
         <div>
           <a
-            href="https://codetensai.dev"
+            href="https://codetensai.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -97,7 +98,6 @@ export default function Home() {
             <Image
               src="/img/codetensai-logo.png"
               alt="By Code Tensai Logo"
-              // className={styles.vercelLogo}
               width={100}
               height={50}
               priority

@@ -121,7 +121,7 @@ export default function Contact() {
           </p>
         </a>
 
-        <a href="/currentprojects" className={styles.card}>
+        <a href="/projects" className={styles.card}>
           <h2>
             Current Projects <span>-&gt;</span>
           </h2>
@@ -147,7 +147,7 @@ export default function Contact() {
         <p>This is a work in progress website</p>
         <div>
           <a
-            href="https://codetensai.com.au"
+            href="https://codetensai.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
