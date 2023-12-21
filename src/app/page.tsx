@@ -6,21 +6,50 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.center}>
-        <Image
-          // className={styles.logo}
-          src="/img/codetensai-logo.png"
-          alt="Code Tensai Logo"
-          width={200}
-          height={100}
-          priority
-        />
-      </div>
-      <div css={{marginTop: "-300px"}}>
-        <p>コード天才</p>
+      <div>
+        <div className={styles.center}>
+          <Image
+            src="/img/codetensai-logo.png"
+            alt="Code Tensai Logo"
+            width={200}
+            height={100}
+            priority
+          />
+        </div>
+        <p
+          css={{
+            display: "flex",
+            justifyContent: "center",
+            color: "#737373",
+            fontSize: "14px",
+            marginTop: "-85px",
+          }}
+        >
+          コード天才
+        </p>
+        <div
+          css={{
+            fontSize: "16px",
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
+        >
+          <a href="/contact" className={styles.card}>
+            <span
+              css={{
+                outline: "2px solid #737373",
+                outlineOffset: "2px",
+                padding: "0.25rem",
+                borderRadius: "0.5rem",
+              }}
+            >
+              Hire me
+            </span>
+          </a>
+        </div>
       </div>
 
-      <div css={{ fontSize: "24px", textDecoration: "underline" }}>
+      <div css={{ fontSize: "26px", color: "#737373" }}>
         <p>For businesses with creative taste</p>
       </div>
 

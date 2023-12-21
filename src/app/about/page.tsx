@@ -6,18 +6,27 @@ import styles from "../page.module.css";
 export default function About() {
   return (
     <main className={styles.main}>
-      <div className={styles.center}>
-        <Image
-          // className={styles.logo}
-          src="/img/codetensai-logo.png"
-          alt="Code Tensai Logo"
-          width={200}
-          height={100}
-          priority
-        />
-      </div>
-      <div css={{marginTop: "-300px"}}>
-        <p>コード天才</p>
+      <div>
+        <div className={styles.center}>
+          <Image
+            src="/img/codetensai-logo.png"
+            alt="Code Tensai Logo"
+            width={200}
+            height={100}
+            priority
+          />
+        </div>
+        <p
+          css={{
+            display: "flex",
+            justifyContent: "center",
+            color: "#737373",
+            fontSize: "14px",
+            marginTop: "-85px",
+          }}
+        >
+          コード天才
+        </p>
       </div>
 
       <div>
@@ -68,7 +77,6 @@ export default function About() {
             <Image
               src="/img/codetensai-logo.png"
               alt="Code Tensai Logo"
-              // className={styles.codetensaiLogo}
               width={100}
               height={50}
               priority
