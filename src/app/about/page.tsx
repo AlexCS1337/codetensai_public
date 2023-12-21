@@ -30,7 +30,7 @@ export default function About() {
       </div>
 
       <div>
-        <p>Text goes here</p>
+        <p>To be added</p>
       </div>
 
       <div className={styles.grid}>
