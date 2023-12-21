@@ -2,6 +2,7 @@
 "use client";
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -27,27 +28,28 @@ export default function Home() {
         >
           コード天才
         </p>
-        {/* todo: fix this link */}
-        <div
-          css={{
-            fontSize: "16px",
-            display: "flex",
-            justifyContent: "flex-end",
-          }}
-        >
-          <a href="/contact" className={styles.card}>
-            <span
-              css={{
-                outline: "2px solid #737373",
-                outlineOffset: "2px",
-                padding: "0.25rem",
-                borderRadius: "0.5rem",
-              }}
-            >
-              Hire me
-            </span>
-          </a>
-        </div>
+      </div>
+
+      {/* todo: fix position and style*/}
+      <div
+        css={{
+          fontSize: "26px",
+          display: "flex",
+          justifyContent: "flex-end",
+        }}
+      >
+        <Link href="/contact">
+          <span
+            css={{
+              outline: "2px solid #737373",
+              outlineOffset: "2px",
+              padding: "0.25rem",
+              borderRadius: "0.5rem",
+            }}
+          >
+            Hire me
+          </span>
+        </Link>
       </div>
 
       <div css={{ fontSize: "26px", color: "#737373" }}>

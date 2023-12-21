@@ -2,8 +2,12 @@
 "use client";
 import Image from "next/image";
 import styles from "../page.module.css";
+import { toast } from "react-toastify";
 
 export default function Contact() {
+  //todo: fix this toast
+  const onClick = () => toast('Form submitted', { hideProgressBar: true, autoClose: 2000, type: 'success' })
+
   return (
     <main className={styles.main}>
       <div>
@@ -40,7 +44,7 @@ export default function Contact() {
             Design Inquiry
           </span>
           <p css={{ fontSize: "16px" }}>
-            Have a idea and looking for help in the design? Get in touch now!
+            Have an idea and looking for help in the design? Get in touch now!
           </p>
         </div>
 
@@ -95,6 +99,7 @@ export default function Contact() {
           </div>
 
           <button
+            onClick={onClick}
             css={{
               fontSize: "16px",
               width: "100%",
@@ -102,7 +107,6 @@ export default function Contact() {
               outline: "2px solid #000000",
               outlineOffset: "2px",
               padding: "0.75rem",
-              borderStyle: "none",
               borderRadius: "0.5rem",
             }}
           >
