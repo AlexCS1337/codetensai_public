@@ -29,8 +29,24 @@ export default function About() {
         </p>
       </div>
 
-      <div>
-        <p>To be added</p>
+      <div
+        css={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "4px",
+        }}
+      >
+        <h2>Code Tensai (Loosely translates to Code Genius) </h2>
+        <p>
+          Started in 2023 Code Tensai is a freelance web development
+          startup/company. Offering modern web design solutions for all your new
+          business' needs.
+        </p>
+        <p>
+          The owner of the site has a Bachelor of IT and roughly 4+ years of
+          experience in Web Design and Software Development.
+        </p>
       </div>
 
       <div className={styles.grid}>

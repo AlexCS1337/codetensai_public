@@ -6,7 +6,13 @@ import { toast } from "react-toastify";
 
 export default function Contact() {
   //todo: fix this toast
-  const onClick = () => toast('Form submitted', { hideProgressBar: true, autoClose: 2000, type: 'success' })
+  const onClick = () =>
+    toast("Form submitted", {
+      hideProgressBar: true,
+      autoClose: 2000,
+      type: "success",
+      position: "top-center",
+    });
 
   return (
     <main className={styles.main}>
