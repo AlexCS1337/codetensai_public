@@ -42,7 +42,7 @@ export default function About() {
         <p>
           Started in 2023 Code Tensai is a freelance web development
           startup/company. Offering modern web design solutions for all your new
-          business' needs.
+          business needs.
         </p>
         <p>
           The owner of the site has a Bachelor of IT and roughly 4+ years of
