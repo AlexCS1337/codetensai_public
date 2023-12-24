@@ -2,8 +2,9 @@
 "use client";
 import Image from "next/image";
 import styles from "../page.module.css";
+import NavBar from "../navbar";
 
-export default function About() {
+export default function Examples() {
   return (
     <main className={styles.main}>
       <div>
@@ -33,37 +34,7 @@ export default function About() {
         <p>To be added</p>
       </div>
 
-      <div className={styles.grid}>
-        <a href="/about" className={styles.card}>
-          <h2>
-            About <span>-&gt;</span>
-          </h2>
-          <p>
-            Find in-depth information about Code Tensai and what they offer.
-          </p>
-        </a>
-
-        <a href="/projects" className={styles.card}>
-          <h2>
-            Current Projects <span>-&gt;</span>
-          </h2>
-          <p>Check out current projects being worked on</p>
-        </a>
-
-        <a href="/examples" className={styles.card}>
-          <h2>
-            Examples <span>-&gt;</span>
-          </h2>
-          <p>Some examples of how your website can look!</p>
-        </a>
-
-        <a href="/contact" className={styles.card}>
-          <h2>
-            Contact <span>-&gt;</span>
-          </h2>
-          <p>Contact now for a quote or more information.</p>
-        </a>
-      </div>
+      <NavBar />
 
       <div className={styles.description}>
         <p>This is a work in progress website</p>
