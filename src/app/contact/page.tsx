@@ -9,8 +9,12 @@ export default function Contact() {
   function handleSubmit(e: { preventDefault: () => void }) {
     e.preventDefault();
     console.log("You clicked submit.");
-    alert("Test alert");
-    toast.success("Test toast");
+    toast("Form submitted", {
+      hideProgressBar: true,
+      autoClose: 2000,
+      type: "success",
+      position: "top-center",
+    });
   }
 
   return (
