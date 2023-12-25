@@ -6,14 +6,12 @@ import { toast } from "react-toastify";
 import NavBar from "../navbar";
 
 export default function Contact() {
-  //todo: fix this toast
-  const onClick = () =>
-    toast("Form submitted", {
-      hideProgressBar: true,
-      autoClose: 2000,
-      type: "success",
-      position: "top-center",
-    });
+  function handleSubmit(e: { preventDefault: () => void }) {
+    e.preventDefault();
+    console.log("You clicked submit.");
+    alert("Test alert");
+    toast.success("Test toast");
+  }
 
   return (
     <main className={styles.main}>
@@ -55,71 +53,77 @@ export default function Contact() {
           </p>
         </div>
 
-        <div css={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-          <div css={{ display: "flex", justifyContent: "space-between" }}>
-            <input
-              css={{
-                fontSize: "16px",
-                height: "42px",
-                width: "205px",
-                outline: "2px solid #00000000",
-                outlineOffset: "2px",
-                padding: "0.75rem",
-                borderStyle: "none",
-                borderRadius: "0.5rem",
-              }}
-              type="text"
-              placeholder="Name"
-            />
-            <input
-              css={{
-                fontSize: "16px",
-                height: "42px",
-                width: "205px",
-                outline: "2px solid #00000000",
-                outlineOffset: "2px",
-                padding: "0.75rem",
-                borderStyle: "none",
-                borderRadius: "0.5rem",
-              }}
-              type="email"
-              placeholder="Email"
-            />
-          </div>
-          <div>
-            <textarea
-              name=""
-              id=""
+        <form onSubmit={handleSubmit}>
+          <div css={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+            <div css={{ display: "flex", justifyContent: "space-between" }}>
+              <input
+                name=""
+                id="user.name"
+                css={{
+                  fontSize: "16px",
+                  height: "42px",
+                  width: "205px",
+                  outline: "2px solid #00000000",
+                  outlineOffset: "2px",
+                  padding: "0.75rem",
+                  borderStyle: "none",
+                  borderRadius: "0.5rem",
+                }}
+                type="text"
+                placeholder="Name"
+              />
+              <input
+                name=""
+                id="user.email"
+                css={{
+                  fontSize: "16px",
+                  height: "42px",
+                  width: "205px",
+                  outline: "2px solid #00000000",
+                  outlineOffset: "2px",
+                  padding: "0.75rem",
+                  borderStyle: "none",
+                  borderRadius: "0.5rem",
+                }}
+                type="email"
+                placeholder="Email"
+              />
+            </div>
+            <div>
+              <textarea
+                name=""
+                id="user.message"
+                css={{
+                  fontSize: "16px",
+                  width: "100%",
+                  height: "125px",
+                  resize: "vertical",
+                  outline: "2px solid #00000000",
+                  outlineOffset: "2px",
+                  padding: "0.75rem",
+                  borderStyle: "none",
+                  borderRadius: "0.5rem",
+                }}
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
               css={{
                 fontSize: "16px",
                 width: "100%",
-                height: "125px",
-                resize: "vertical",
-                outline: "2px solid #00000000",
+                height: "42px",
+                outline: "2px solid #000000",
                 outlineOffset: "2px",
                 padding: "0.75rem",
-                borderStyle: "none",
                 borderRadius: "0.5rem",
+                cursor: "pointer",
               }}
-              placeholder="Message"
-            ></textarea>
+            >
+              Submit
+            </button>
           </div>
-
-          <button
-            onClick={onClick}
-            css={{
-              fontSize: "16px",
-              width: "100%",
-              height: "42px",
-              outline: "2px solid #000000",
-              outlineOffset: "2px",
-              padding: "0.75rem",
-              borderRadius: "0.5rem",
-            }}
-          >
-            Submit Inquiry
-          </button>
-        </div>
+        </form>
       </div>
 
       <NavBar />
