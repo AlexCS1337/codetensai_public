@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
-import { ToastContainer } from "react-toastify";
+import ToastProvider from "./providers/toast.provider";
 // import RootStyleRegistry from "./emotion";
 
 export const metadata: Metadata = {
@@ -13,7 +13,9 @@ export default function RootLayout({ children }: { children: JSX.Element }) {
   return (
     <html lang="en">
       {/* <RootStyleRegistry>{children}</RootStyleRegistry> */}
-      <AppRouterCacheProvider><ToastContainer/>{children}</AppRouterCacheProvider>
+      <AppRouterCacheProvider>
+        <ToastProvider>{children}</ToastProvider>
+      </AppRouterCacheProvider>
     </html>
   );
 }
