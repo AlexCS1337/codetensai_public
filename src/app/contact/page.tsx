@@ -2,19 +2,20 @@
 "use client";
 import Image from "next/image";
 import styles from "../page.module.css";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 import NavBar from "../navbar";
 
 export default function Contact() {
   function handleSubmit(e: { preventDefault: () => void }) {
     e.preventDefault();
     console.log("You clicked submit.");
-    toast("Form submitted", {
-      hideProgressBar: true,
-      autoClose: 2000,
-      type: "success",
-      position: "top-center",
-    });
+    // toast("Form submitted.", {
+    //   hideProgressBar: true,
+    //   autoClose: 2000,
+    //   type: "success",
+    //   position: "top-center",
+    // });
+    alert("Form submitted.");
   }
 
   return (
