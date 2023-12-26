@@ -3,35 +3,21 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
-import NavBar from "./navbar";
+import NavBar from "./components/navbar";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div>
-        <div className={styles.center}>
-          <Image
-            src="/img/codetensai-logo.png"
-            alt="Code Tensai Logo"
-            width={200}
-            height={100}
-            priority
-          />
-        </div>
-        <p
-          css={{
-            display: "flex",
-            justifyContent: "center",
-            color: "#737373",
-            fontSize: "14px",
-            marginTop: "-85px",
-          }}
-        >
-          コード天才
-        </p>
+      <div className={styles.center}>
+        <Image
+          src="/img/codetensai-logo.png"
+          alt="Code Tensai Logo"
+          width={200}
+          height={100}
+          priority
+        />
       </div>
 
-      {/* todo: fix position and style*/}
       <div
         css={{
           fontSize: "26px",

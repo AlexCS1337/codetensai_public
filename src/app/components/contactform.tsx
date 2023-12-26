@@ -49,7 +49,7 @@ export const ContactForm = () => {
               outlineOffset: "2px",
               padding: "0.75rem",
               borderStyle: "none",
-              borderRadius: "0.5rem",
+              borderRadius: "0.5rem"
             }}
             type="text"
             placeholder="Name"
@@ -64,7 +64,7 @@ export const ContactForm = () => {
               outlineOffset: "2px",
               padding: "0.75rem",
               borderStyle: "none",
-              borderRadius: "0.5rem",
+              borderRadius: "0.5rem"
             }}
             type="email"
             placeholder="Email"
@@ -82,7 +82,7 @@ export const ContactForm = () => {
               outlineOffset: "2px",
               padding: "0.75rem",
               borderStyle: "none",
-              borderRadius: "0.5rem",
+              borderRadius: "0.5rem"
             }}
             placeholder="Message"
           ></textarea>
@@ -97,7 +97,7 @@ export const ContactForm = () => {
             outlineOffset: "2px",
             padding: "0.75rem",
             borderRadius: "0.5rem",
-            cursor: "pointer",
+            cursor: "pointer"
           }}
           value="Submit"
         ></input>
