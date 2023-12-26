@@ -38,7 +38,7 @@ export const ContactForm = () => {
       <div css={{ display: "flex", flexDirection: "column", gap: "8px" }}>
         <div css={{ display: "flex", justifyContent: "space-between" }}>
           <input
-            id="user_name"
+            name="user_name"
             css={{
               fontSize: "16px",
               height: "42px",
@@ -53,7 +53,7 @@ export const ContactForm = () => {
             placeholder="Name"
           />
           <input
-            id="user_email"
+            name="user_email"
             css={{
               fontSize: "16px",
               height: "42px",
@@ -70,7 +70,7 @@ export const ContactForm = () => {
         </div>
         <div>
           <textarea
-            id="user_message"
+            name="user_message"
             css={{
               fontSize: "16px",
               width: "100%",
