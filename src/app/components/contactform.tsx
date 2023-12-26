@@ -25,11 +25,11 @@ export const ContactForm = () => {
         .then(
           (result) => {
             console.log(result.text);
-            alert("Email received!");
+            alert("Email received!\nWe will get back to you shortly.");
           },
           (error) => {
             console.log(error.text);
-            alert("Sorry, something went wrong. Try again later.");
+            alert("Sorry, something went wrong.\nTry again later.");
           }
         );
     }
