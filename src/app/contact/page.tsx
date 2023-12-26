@@ -2,21 +2,10 @@
 "use client";
 import Image from "next/image";
 import styles from "../page.module.css";
-// import { toast } from "react-toastify";
 import NavBar from "../navbar";
+import { ContactForm } from "../components/contactform";
 
 export default function Contact() {
-  function handleSubmit(e: { preventDefault: () => void }) {
-    e.preventDefault();
-    console.log("You clicked submit.");
-    // toast("Form submitted.", {
-    //   hideProgressBar: true,
-    //   autoClose: 2000,
-    //   type: "success",
-    //   position: "top-center",
-    // });
-    alert("Form submitted.");
-  }
 
   return (
     <main className={styles.main}>
@@ -57,78 +46,7 @@ export default function Contact() {
             Have an idea and looking for help in the design? Get in touch now!
           </p>
         </div>
-
-        <form onSubmit={handleSubmit}>
-          <div css={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-            <div css={{ display: "flex", justifyContent: "space-between" }}>
-              <input
-                name=""
-                id="user.name"
-                css={{
-                  fontSize: "16px",
-                  height: "42px",
-                  width: "205px",
-                  outline: "2px solid #00000000",
-                  outlineOffset: "2px",
-                  padding: "0.75rem",
-                  borderStyle: "none",
-                  borderRadius: "0.5rem",
-                }}
-                type="text"
-                placeholder="Name"
-              />
-              <input
-                name=""
-                id="user.email"
-                css={{
-                  fontSize: "16px",
-                  height: "42px",
-                  width: "205px",
-                  outline: "2px solid #00000000",
-                  outlineOffset: "2px",
-                  padding: "0.75rem",
-                  borderStyle: "none",
-                  borderRadius: "0.5rem",
-                }}
-                type="email"
-                placeholder="Email"
-              />
-            </div>
-            <div>
-              <textarea
-                name=""
-                id="user.message"
-                css={{
-                  fontSize: "16px",
-                  width: "100%",
-                  height: "125px",
-                  resize: "vertical",
-                  outline: "2px solid #00000000",
-                  outlineOffset: "2px",
-                  padding: "0.75rem",
-                  borderStyle: "none",
-                  borderRadius: "0.5rem",
-                }}
-                placeholder="Message"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              css={{
-                fontSize: "16px",
-                width: "100%",
-                height: "42px",
-                outline: "2px solid #000000",
-                outlineOffset: "2px",
-                padding: "0.75rem",
-                borderRadius: "0.5rem",
-                cursor: "pointer",
-              }}
-            >
-              Submit
-            </button>
-          </div>
-        </form>
+        <ContactForm />
       </div>
 
       <NavBar />
