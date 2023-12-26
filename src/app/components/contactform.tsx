@@ -25,6 +25,7 @@ export const ContactForm = () => {
         .then(
           (result) => {
             alert(result.text);
+            alert("Email received!")
           },
           (error) => {
             alert(error.text);
