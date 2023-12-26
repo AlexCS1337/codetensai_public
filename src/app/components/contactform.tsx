@@ -24,11 +24,12 @@ export const ContactForm = () => {
         )
         .then(
           (result) => {
-            alert(result.text);
-            alert("Email received!")
+            console.log(result.text);
+            alert("Email received!");
           },
           (error) => {
-            alert(error.text);
+            console.log(error.text);
+            alert("Sorry, something went wrong. Try again later.");
           }
         );
     }
