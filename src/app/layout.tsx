@@ -13,9 +13,11 @@ export default function RootLayout({ children }: { children: JSX.Element }) {
   return (
     <html lang="en">
       {/* <RootStyleRegistry>{children}</RootStyleRegistry> */}
-      <AppRouterCacheProvider>
-        <ToastProvider>{children}</ToastProvider>
-      </AppRouterCacheProvider>
+      <body>
+        <AppRouterCacheProvider>
+          <ToastProvider>{children}</ToastProvider>
+        </AppRouterCacheProvider>
+      </body>
     </html>
   );
 }
